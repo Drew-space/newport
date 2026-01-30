@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-bebasNeue: var(--font-bebasNeue);
+}
+
+@layer base {
+  body {
+    @apply bg-stone-100 text-neutral-900;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-bebasNeue;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply px-[5vw] w-full mx-auto;
+  }
+
+  .text-line {
+    @apply overflow-hidden text-nowrap;
+  }
+}
