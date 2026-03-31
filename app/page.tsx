@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <Projects />
-      <Timeline />
+      {/* <Timeline /> */}
       <Contact />
     </ReactLenis>
   );
