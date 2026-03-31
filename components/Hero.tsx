@@ -39,7 +39,7 @@ export default function Hero() {
     },
   );
   return (
-    <section id="/" ref={containerRef} className="relative ">
+    <section id="home" ref={containerRef} className="relative ">
       <div className="container flex items-center justify-center flex-col min-h-screen ">
         {/* wrapper */}
         <div className=" hero-wrapper text-center my-auto">
