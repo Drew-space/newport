@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import CustomCursor from "@/components/CustomCursor";
+import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 
 export const bebasNeue = localFont({
   src: [
@@ -39,9 +40,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${bebasNeue.variable} ${pally.className} antialiased`}>
-        <CustomCursor />
-        <Header />
-        <main className="min-h-svh">{children}</main>
+        <SmoothScrollProvider>
+          <CustomCursor />
+          <Header />
+          <main className="min-h-svh">{children}</main>
+        </SmoothScrollProvider>
       </body>
     </html>
   );

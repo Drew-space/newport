@@ -26,7 +26,7 @@ export default function Projects() {
     },
   );
   return (
-    <section ref={containerRef} className=" mb-100vh">
+    <section id="projects" ref={containerRef} className=" mb-[100vh]">
       <div className="">
         {/* title */}
         <div className=" min-h-svh flex flex-col items-center justify-center space-y-1 container ">

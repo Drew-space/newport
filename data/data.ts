@@ -16,60 +16,89 @@ export const navItems = [
   },
 ];
 
+// export const aboutStatusItems = [
+//   {
+//     id: 1,
+//     label: "YEARS OF EXPERIENCE",
+//     value: "7+",
+//   },
+//   {
+//     id: 2,
+//     label: "PROJECTS BUILT",
+//     value: "50+",
+//   },
+//   {
+//     id: 3,
+//     label: "TECH STACKS MASTERED",
+//     value: "10+",
+//   },
+//   {
+//     id: 4,
+//     label: "CLIENT SATISFACTION",
+//     value: "100%",
+//   },
+// ];
+
 export const aboutStatusItems = [
   {
     id: 1,
-    label: "YEARS OF EXPERIENCE",
-    value: "7+",
+    label: "YEARS CODING",
+    value: "1+",
   },
   {
     id: 2,
-    label: "PROJECTS BUILT",
-    value: "50+",
+    label: "PROJECTS SHIPPED",
+    value: "12+",
   },
   {
     id: 3,
-    label: "TECH STACKS MASTERED",
-    value: "10+",
+    label: "TECHNOLOGIES USED",
+    value: "6+",
   },
   {
     id: 4,
-    label: "CLIENT SATISFACTION",
-    value: "100%",
+    label: "CURRENT FOCUS",
+    value: "FULL-STACK",
   },
 ];
-
 export const projectItems = [
   {
     id: 1,
-    title: "NEXORA",
-    text: "A modern multi-page SaaS website built with a strong focus on performance, accessibility, and smooth user experience. Includes animated sections, responsive layouts, and SEO-optimized structure.",
-    tools: ["Next.js", "Tailwind CSS", "TypeScript", "Framer Motion"],
-    img: "/images/project-1.webp",
+    title: "RUUM",
+    text: "A campus housing marketplace that connects students with trusted agents to find and secure accommodation easily. Agents can list available rooms, while students browse listings, view details, and message agents directly. Built with a full-stack architecture and real-time database.",
+    tools: ["Next.js", "Tailwind CSS", "TypeScript", "Convex DB", "Clerk Auth"],
+    img: "/images/ruum.png",
     backgroundClr: "#171717",
   },
   {
     id: 2,
-    title: "DOMYRA",
-    text: "A property listing platform featuring advanced search, filters, and clean UI components. Designed to handle large datasets while maintaining fast load times and intuitive navigation.",
-    tools: ["Next.js", "shadcn/ui", "Tailwind CSS", "React"],
-    img: "/images/project-2.webp",
+    title: "Dev-Byte",
+    text: "A secure developer journaling platform where users can sign up, write, edit, and manage personal dev notes in a clean, distraction-free workspace. Features authentication, protected routes, and a modern responsive UI.",
+    tools: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Clerk Authentication",
+    ],
+    img: "/images/dev-byte.png",
     backgroundClr: "#9589d3",
   },
+
   {
     id: 3,
-    title: "KLYDE",
-    text: "A highly interactive personal portfolio showcasing projects, skills, and experience using fluid animations and scroll-based interactions to create a memorable user experience.",
-    tools: ["HTML", "CSS", "JavaScript", "GSAP"],
-    img: "/images/project-3.webp",
+    title: "HOPE ALIVE",
+    text: "A donation platform designed to help provide clean water to communities across Africa. Users can learn about the mission, explore initiatives, and securely donate through an integrated payment system in a fast, responsive interface.",
+    tools: ["Next.js", "Tailwind CSS", "Paystack"],
+    img: "/images/hope-alive.png",
     backgroundClr: "oklch(50.8% 0.118 165.612)",
   },
   {
     id: 4,
-    title: "VIREX",
-    text: "A responsive dashboard interface with charts, stats, and dynamic layouts. Built for scalability with a component-driven approach and smooth transitions between views.",
-    tools: ["React", "Tailwind CSS", "TypeScript", "Recharts"],
-    img: "/images/project-2.webp",
+    title: "DREAMZINT",
+    text: "A modern interior design website built to showcase spaces, services, and inspiration through a clean, elegant interface. Focused on responsive layouts, smooth navigation, and a visually rich browsing experience.",
+    tools: ["Next.js", "Tailwind CSS", "TypeScript"],
+    img: "/images/dreamint.png",
     backgroundClr: "oklch(52% 0.105 223.128)",
   },
 ];

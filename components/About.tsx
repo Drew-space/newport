@@ -50,7 +50,11 @@ export default function About() {
     },
   );
   return (
-    <section ref={containerRef} className="bg-black min-h-svh pt-14 ">
+    <section
+      id="about"
+      ref={containerRef}
+      className="bg-black min-h-svh pt-14 "
+    >
       <div className="text-center space-y-5 sm:space-y-7">
         {/* wrapper */}
         <div

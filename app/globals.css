@@ -5,6 +5,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth; /* ✅ smooth scrolling for all anchor links */
+  }
+
   body {
     @apply bg-stone-100 text-neutral-900;
   }
