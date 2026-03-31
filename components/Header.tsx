@@ -83,7 +83,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 left-0 w-full bg-stone-100/20 backdrop-blur-sm z-50">
+    <header className="fixed top-0 left-0 w-full bg-stone-100/20 backdrop-blur-sm z-50">
       <div className="container flex items-center justify-between py-4">
         {/* logo */}
         <Link href="/" className="font-bebasNeue text-[32px]">
