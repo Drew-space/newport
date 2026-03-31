@@ -51,26 +51,28 @@ export default function Hero() {
             I build modern web apps with React, Next.js, Clerk & Convex
           </h2>
         </div>
-        <div
-          className="mx-auto
-         w-full  containerz-50"
-        >
-          <TechMarquee />
-        </div>
+
         {/* social links */}
-        <div className="absolute bottom-32 left-8 gap-2 grid-2">
+        <div className="absolute max-sm:bottom-48 bottom-32 left-8 gap-2 grid-2">
           {[RiLinkedinBoxLine, RiGithubFill, RiMailLine, RiTwitterXLine].map(
             (Icon, i) => (
               <a
                 key={i}
                 href="#"
                 target="_blank"
-                className="hover:scale-105 transition-transform"
+                className="hover:scale-105 transition-transform "
               >
                 <Icon size={30} className="" />
               </a>
             ),
           )}
+        </div>
+
+        <div
+          className="mx-auto
+         w-full  containerz-50"
+        >
+          <TechMarquee />
         </div>
         {/* scroll down  */}
         <div className="flex items-center gap-2 mb-5 ">

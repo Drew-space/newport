@@ -41,5 +41,5 @@
 }
 
 .animate-marquee {
-  animation: marquee 6s linear infinite; /* faster than 25s */
+  animation: marquee 5s linear infinite; /* faster than 25s */
 }

@@ -107,7 +107,7 @@ export default function TechMarquee() {
               key={i}
               className="flex items-center gap-2.5 shrink-0  hover:opacity-100 transition-opacity"
             >
-              <div className="w-10 h-10 relative">
+              <div className="sm:w-10 sm:h-10 w-8 h-8 relative">
                 <Image
                   src={logo.src}
                   alt={logo.name}
