@@ -1,3 +1,71 @@
+"use client";
+import { aboutStatusItems } from "@/data/data";
+import Button from "./Button";
+import { gsap, useGSAP, SplitText } from "@/lib/gsap-util";
+import { useRef } from "react";
+
 export default function About() {
-  return <section>About</section>;
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const wrapperRef = useRef<HTMLDivElement | null>(null);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: wrapperRef.current,
+          start: "top center",
+          end: "bottom center",
+          scrub: 1,
+        },
+      });
+
+      tl.to(wrapperRef.current, {
+        maxWidth: "100%",
+        duration: 1,
+        ease: "power3.out",
+      });
+    },
+    {
+      scope: containerRef,
+    },
+  );
+  return (
+    <section ref={containerRef} className="bg-black min-h-svh pt-14 ">
+      <div className="text-center space-y-5 sm:space-y-7">
+        {/* wrapper */}
+        <div
+          ref={wrapperRef}
+          className=" bg-stone-100 mx-auto max-w-[90%] px-8  space-y-5 py-20 h-dvh rounded-t-md sm:max-w-[70%] "
+        >
+          <h2 className="text-4xl sm:text-5xl lg:text-7xl">About me </h2>
+          <p className="text-lg lg:text-xl max-w-3xl mx-auto">
+            I’m Drew, a Frontend Developer building modern, fast, and
+            interactive web applications where design meets code.
+          </p>
+          <p className="max-w-3xl mx-auto">
+            I specialize in React, Next.js, Clerk authentication, and Convex,
+            creating products that are not only functional but also clean,
+            intuitive, and enjoyable to use. Every line of code I write is
+            focused on solving real problems while delivering smooth and
+            engaging user experiences.
+          </p>
+
+          {/* btn */}
+          <Button label="View Projects" />
+
+          {/* status*/}
+          <div className="grid gap-4 sm:grid-cols-2 mt-10 max-w-4xl mx-auto">
+            {aboutStatusItems.map((item) => (
+              <div className="border border-stone-300 p-4" key={item.id}>
+                <span className="text-xl sm:text-2xl md:text-3xl font-bebasNeue">
+                  {item.value}
+                </span>
+                <p className="text-stone-600">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }

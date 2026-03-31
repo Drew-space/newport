@@ -90,7 +90,7 @@ export default function Header() {
           DREW
         </Link>
         {/* mobile menu */}
-        <nav className="hg:hidden">
+        <nav className="lg:hidden">
           {/* menu button */}
           <button
             onClick={handleClick}
