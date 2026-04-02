@@ -177,8 +177,7 @@ export default function Header() {
         links,
         { y: 30, opacity: 0, duration: 0.5, stagger: 0.08, ease: "power3.out" },
         "-=0.2",
-      )
-      .set(menuRef.current, { pointerEvents: "none" });
+      );
   }, []);
 
   /* ---------------- MENU TOGGLE ---------------- */
@@ -186,7 +185,15 @@ export default function Header() {
   const toggleMenu = () => {
     setIsOpen((prev) => {
       const next = !prev;
-      next ? tlRef.current?.play() : tlRef.current?.reverse();
+      if (next) {
+        tlRef.current?.play();
+      } else {
+        tlRef.current?.reverse().then(() => {
+          if (menuRef.current) {
+            menuRef.current.style.pointerEvents = "none";
+          }
+        });
+      }
       return next;
     });
   };

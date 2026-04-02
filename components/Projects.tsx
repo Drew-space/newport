@@ -55,7 +55,7 @@ export default function Projects() {
                   {" "}
                   {item.title}{" "}
                 </h3>
-                <Button label={"View project"} />
+                <Button label="View project" href={item.liveUrl} />
               </div>
               {/* image */}
               <div className="flex items-center justify-center mx-auto">
