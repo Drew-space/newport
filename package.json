@@ -12,6 +12,7 @@
     "@gsap/react": "^2.1.2",
     "@remixicon/react": "^4.8.0",
     "gsap": "^3.14.2",
+    "infinite-marquee-scroll": "^1.1.3",
     "lenis": "^1.3.21",
     "lucide-react": "^0.562.0",
     "next": "16.1.4",
