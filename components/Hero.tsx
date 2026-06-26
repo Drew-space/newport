@@ -145,7 +145,7 @@ const marqueeItems = [
   { text: "React", image: { src: "/icons/react.svg" } },
   { text: "Next.js", image: { src: "/icons/Next.svg" } },
   { text: "Clerk", image: { src: "/icons/clerk.svg" } },
-  { text: "Convex", image: { src: "/icons/convex.jpg" } },
+  { text: "Convex", image: { src: "/icons/convex.png" } },
   { text: "HTML", image: { src: "/icons/html.png" } },
   { text: "CSS", image: { src: "/icons/css3.svg" } },
   { text: "JavaScript", image: { src: "/icons/javascript.svg" } },
